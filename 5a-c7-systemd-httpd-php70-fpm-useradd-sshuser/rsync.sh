@@ -7,3 +7,5 @@ rsync -av /root/ /tmp/default_paths_for_docker/root/
 rsync -av /var/log/ /tmp/default_paths_for_docker/var/log/
 rsync -av /var/www/ /tmp/default_paths_for_docker/var/www/
 touch /tmp/default_paths_for_docker/var/www/.keep
+rsync -av /var/www/ /tmp/default_paths_for_docker/var/opt/
+touch /tmp/default_paths_for_docker/var/opt/.keep
