@@ -11,6 +11,7 @@ docker run -d \
   -v $current_dir/volumes/volume_yourdomain.com/root:/root \
   -v $current_dir/volumes/volume_yourdomain.com/var/log:/var/log \
   -v $current_dir/volumes/volume_yourdomain.com/var/www:/var/www \
+  -v $current_dir/volumes/volume_yourdomain.com/var/opt:/var/opt \
   -p 80:80 \
   -p 443:443 \
   --restart always \
