@@ -1,0 +1,1 @@
+docker build -t c7-systemd-httpd-nginx-php70-fpm .
