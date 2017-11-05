@@ -1,0 +1,32 @@
+yum makecache fast
+yum -y update
+yum -y install epel-release
+
+yum -y install bzip2 \
+atop \
+htop \
+httpd \
+iftop \
+iotop \
+mysql \
+nfs-utils \
+nginx \
+redis \
+rsync \
+subversion \
+telnet \
+tmux \
+unzip \
+vim-enhanced \
+wget \
+yum-utils
+
+yum install -y yum-utils device-mapper-persistent-data lvm2
+yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+yum makecache fast
+yum -y install docker-ce
+systemctl enable docker
+systemctl start docker
+
