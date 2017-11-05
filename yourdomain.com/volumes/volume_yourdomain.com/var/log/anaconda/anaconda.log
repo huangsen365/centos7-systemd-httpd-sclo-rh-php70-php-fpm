@@ -1,0 +1,133 @@
+15:51:20,827 INFO anaconda: /sbin/anaconda 21.48.22.121-1
+15:51:21,151 INFO anaconda: created new libuser.conf at /tmp/libuser.MWoSyk with instPath="/mnt/sysimage"
+15:51:21,155 INFO anaconda: 1048576 kB (1024 MB) are available
+15:51:21,170 INFO anaconda: check_memory(): total:1024, needed:320, graphical:410
+15:51:21,176 INFO anaconda: anaconda called with cmdline = ['/sbin/anaconda']
+15:51:21,176 INFO anaconda: Default encoding = utf-8 
+15:51:21,205 INFO anaconda: Parsing kickstart: /run/install/ks.cfg
+15:51:21,697 DEBUG anaconda: scripts found for locale en_US.UTF-8: ['Latn']
+15:51:21,698 DEBUG anaconda: console fonts found for locale en_US.UTF-8: ['latarcyrheb-sun16']
+15:51:21,698 DEBUG anaconda: setting console font to latarcyrheb-sun16
+15:51:26,713 ERR anaconda: setting console font to latarcyrheb-sun16 failed
+15:51:26,713 WARN anaconda: can't set console font for locale en_US.UTF-8
+15:51:26,713 WARN anaconda: none of the suggested fonts can be set for locale en_US.UTF-8
+15:51:26,713 WARN anaconda: falling back to the English locale
+15:51:26,714 DEBUG anaconda: setting locale to: en_US.UTF-8
+15:51:26,738 DEBUG anaconda: network: devices found ['ens3']
+15:51:26,745 DEBUG anaconda: network: ensure single initramfs connections
+15:51:26,797 DEBUG anaconda: network: apply kickstart
+15:51:26,878 DEBUG anaconda: network: ifcfg file for ens3 not found
+15:51:26,878 DEBUG anaconda: network: pre kickstart - adding connection for ens3
+15:51:26,898 DEBUG anaconda: network: pre kickstart - activating connection a3f066e6-2864-4369-a046-03ed19ffc6ab for ens3
+15:51:26,913 DEBUG anaconda: network: kickstart pre section applied for devices ['ens3']
+15:51:26,949 DEBUG anaconda: network: create missing ifcfg files
+15:51:27,114 DEBUG anaconda: network: set real ONBOOT value
+15:51:27,140 DEBUG anaconda: network: setting ONBOOT value of ens3 to True
+15:51:27,187 DEBUG anaconda: network: real kickstart ONBOOT value set for devices ['ens3']
+15:51:27,201 DEBUG anaconda: updating hostname localhost.localdomain
+15:51:27,220 INFO anaconda: Display mode = c
+15:51:27,221 INFO anaconda: 1048576 kB (1024 MB) are available
+15:51:27,223 INFO anaconda: Running Thread: AnaWaitForConnectingNMThread (140439332189952)
+15:51:27,231 DEBUG anaconda: network: waiting for connecting NM (dhcp in progress?), timeout=45
+15:51:27,235 INFO anaconda: check_memory(): total:1024, needed:320, graphical:410
+15:51:27,265 INFO anaconda: CentOS Linux is the highest priority installclass, using it
+15:51:27,737 INFO anaconda: boot loader GRUB2 on X86 platform
+15:51:27,795 DEBUG anaconda: LABEL=OEMDRV matches [] for devicetree=None and disks_only=True
+15:51:27,797 INFO anaconda: Running Thread: AnaStorageThread (140439286265600)
+15:51:27,821 INFO anaconda: Running Thread: AnaTimeInitThread (140439277872896)
+15:51:27,827 INFO anaconda: Geolocation is disabled due to automated kickstart based installation.
+15:51:27,846 INFO anaconda: Running Thread: AnaPayloadRestartThread (140439269480192)
+15:51:27,853 INFO anaconda: Thread Done: AnaPayloadRestartThread (140439269480192)
+15:51:27,854 INFO anaconda: Running Thread: AnaPayloadThread (140439261087488)
+15:51:27,906 INFO anaconda: Adding controller: SummaryHub
+15:51:28,064 INFO anaconda: Module initialized: LangSpoke
+15:51:28,072 INFO anaconda: Module initialized: TimeSpoke
+15:51:28,076 INFO anaconda: Running Thread: AnaSourceWatcher (140439269480192)
+15:51:28,082 INFO anaconda: Running Thread: AnaSoftwareWatcher (140439252694784)
+15:51:28,091 INFO anaconda: Running Thread: AnaStorageWatcher (140439244302080)
+15:51:28,203 INFO anaconda: Module initialized: NetworkSpoke
+15:51:28,204 INFO anaconda: Initialization of all modules (6) has been started.
+15:51:28,017 INFO anaconda: Thread Done: AnaTimeInitThread (140439277872896)
+15:51:28,337 INFO anaconda: boot loader GRUB2 on X86 platform
+15:51:28,456 INFO anaconda: Thread Done: AnaStorageThread (140439286265600)
+15:51:28,492 INFO anaconda: Module initialized: StorageSpoke
+15:51:28,493 INFO anaconda: Thread Done: AnaStorageWatcher (140439244302080)
+15:51:29,133 DEBUG anaconda: network: NM connected, waited 1 seconds
+15:51:29,169 INFO anaconda: got 0 NTP servers from DHCP
+15:51:29,169 INFO anaconda: Thread Done: AnaWaitForConnectingNMThread (140439332189952)
+15:51:34,145 INFO anaconda: Thread Done: AnaPayloadThread (140439261087488)
+15:51:34,146 INFO anaconda: Module initialized: SourceSpoke
+15:51:34,147 INFO anaconda: Thread Done: AnaSourceWatcher (140439269480192)
+15:51:34,147 INFO anaconda: Running Thread: AnaCheckSoftwareThread (140439244302080)
+15:51:36,924 INFO anaconda: Thread Done: AnaCheckSoftwareThread (140439244302080)
+15:51:36,925 INFO anaconda: Module initialized: SoftwareSpoke
+15:51:36,925 INFO anaconda: All modules have been initialized.
+15:51:36,925 INFO anaconda: Thread Done: AnaSoftwareWatcher (140439252694784)
+15:51:40,737 DEBUG anaconda: new disk order: []
+15:51:40,738 DEBUG anaconda: Bootloader: /boot partition is not present, dry run True
+15:51:40,738 DEBUG anaconda: Bootloader: fallback use first disk return from Blivet 'sda' as boot drive, dry run True
+15:51:40,794 DEBUG anaconda: new disk order: []
+15:51:40,795 DEBUG anaconda: Bootloader: /boot partition is not present, dry run False
+15:51:40,795 DEBUG anaconda: Bootloader: fallback use first disk return from Blivet 'sda' as boot drive, dry run False
+15:51:40,802 DEBUG anaconda: _is_valid_disklabel(sda) returning True
+15:51:40,802 DEBUG anaconda: _is_valid_size(sda) returning True
+15:51:40,803 DEBUG anaconda: _is_valid_location(sda) returning True
+15:51:40,803 DEBUG anaconda: _is_valid_format(sda) returning True
+15:51:40,804 DEBUG anaconda: is_valid_stage1_device(sda) returning True
+15:51:40,823 DEBUG anaconda: _is_valid_disklabel(sda) returning True
+15:51:40,824 DEBUG anaconda: _is_valid_size(sda) returning True
+15:51:40,824 DEBUG anaconda: _is_valid_location(sda) returning True
+15:51:40,825 DEBUG anaconda: _is_valid_format(sda) returning True
+15:51:40,825 DEBUG anaconda: is_valid_stage1_device(sda) returning True
+15:51:40,826 DEBUG anaconda: _is_valid_disklabel(sda1) returning True
+15:51:40,826 DEBUG anaconda: _is_valid_size(sda1) returning True
+15:51:40,827 DEBUG anaconda: _is_valid_location(sda1) returning True
+15:51:40,827 DEBUG anaconda: _is_valid_partition(sda1) returning True
+15:51:40,828 DEBUG anaconda: _is_valid_format(sda1) returning True
+15:51:40,828 DEBUG anaconda: is_valid_stage2_device(sda1) returning True
+15:51:40,831 DEBUG anaconda: Storage check started with constraints {'must_be_on_linuxfs': set(['/tmp', '/var', '/usr', '/home', '/', '/usr/lib', '/usr/share']), 'must_be_on_root': set(['/etc', '/bin', '/proc', '/sbin', '/dev', '/lib', 'lost+found', '/mnt', '/root']), 'min_ram': 320, 'req_partition_sizes': {}, 'min_root': Size('250 MiB'), 'must_not_be_on_root': set([]), 'root_device_types': set([]), 'min_partition_sizes': {'/boot': Size('200 MiB'), '/home': Size('100 MiB'), '/var': Size('384 MiB'), '/tmp': Size('50 MiB'), '/usr': Size('250 MiB')}}.
+15:51:40,833 DEBUG anaconda: Run sanity check verify_root.
+15:51:40,833 DEBUG anaconda: Run sanity check verify_partition_sizes.
+15:51:40,834 DEBUG anaconda: Run sanity check verify_partition_format_sizes.
+15:51:40,834 DEBUG anaconda: Run sanity check verify_bootloader.
+15:51:40,835 DEBUG anaconda: Run sanity check verify_gpt_biosboot.
+15:51:40,836 DEBUG anaconda: Run sanity check verify_swap.
+15:51:40,837 DEBUG anaconda: Found sanity warning: You have not specified a swap partition. Although not strictly required in all cases, it will significantly improve performance for most installations.
+15:51:40,837 DEBUG anaconda: Run sanity check verify_swap_uuid.
+15:51:40,838 DEBUG anaconda: Run sanity check verify_mountpoints_on_linuxfs.
+15:51:40,838 DEBUG anaconda: Run sanity check verify_mountpoints_on_root.
+15:51:40,838 DEBUG anaconda: Run sanity check verify_mountpoints_not_on_root.
+15:51:40,839 DEBUG anaconda: Run sanity check verify_luks_devices_have_key.
+15:51:40,839 DEBUG anaconda: Storage check finished with failure(s).
+15:51:40,840 WARN anaconda: You have not specified a swap partition. Although not strictly required in all cases, it will significantly improve performance for most installations.
+15:51:40,843 DEBUG anaconda: Entered hub: SummaryHub
+15:51:40,917 INFO anaconda: fs space: 3000 MiB  needed: 718.6 MiB
+15:51:40,940 DEBUG anaconda: Left hub: SummaryHub
+15:51:40,941 DEBUG anaconda: Entered spoke: ProgressSpoke
+15:51:40,948 INFO anaconda: Running Thread: AnaInstallThread (140439244302080)
+15:51:41,503 INFO anaconda: Setting up the installation environment
+15:51:41,503 INFO anaconda: Setting up the installation environment
+15:51:41,599 INFO anaconda: Creating disklabel on /dev/sda
+15:51:41,650 INFO anaconda: Created disklabel on /dev/sda
+15:51:41,886 INFO anaconda: Creating ext4 on /dev/sda1
+15:51:42,919 INFO anaconda: Created ext4 on /dev/sda1
+15:51:43,194 INFO anaconda: Running pre-installation scripts
+15:51:43,195 INFO anaconda: Running pre-installation scripts
+15:53:12,148 INFO anaconda: Performing post-installation setup tasks
+15:53:12,153 INFO anaconda: Performing post-installation setup tasks
+15:53:12,154 INFO anaconda: Thread Done: AnaInstallThread (140439244302080)
+15:53:12,157 INFO anaconda: Running Thread: AnaConfigurationThread (140439244302080)
+15:53:12,158 INFO anaconda: Configuring installed system
+15:53:12,159 ERR anaconda: Error setting selinux mode: [Errno 2] No such file or directory: '/mnt/sysimage/etc/selinux/config'
+15:53:12,554 INFO anaconda: Configuring installed system
+15:53:12,555 INFO anaconda: Writing network configuration
+15:53:12,573 INFO anaconda: Writing network configuration
+15:53:12,574 INFO anaconda: Creating users
+15:53:12,574 INFO anaconda: Clearing libuser.conf at /tmp/libuser.MWoSyk
+15:53:12,673 INFO anaconda: Creating users
+15:53:12,675 INFO anaconda: Configuring addons
+15:53:12,684 INFO anaconda: Configuring addons
+15:53:12,684 INFO anaconda: Generating initramfs
+15:53:43,445 INFO anaconda: Generating initramfs
+15:53:43,445 INFO anaconda: Running post-installation scripts
+15:53:43,445 INFO anaconda: Running kickstart %%post script(s)

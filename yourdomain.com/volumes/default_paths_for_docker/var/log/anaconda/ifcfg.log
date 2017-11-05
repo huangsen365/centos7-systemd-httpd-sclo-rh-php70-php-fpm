@@ -1,0 +1,72 @@
+15:51:26,739 DEBUG ifcfg: content of files (network initialization):
+15:51:26,745 DEBUG ifcfg: all settings: []
+15:51:26,913 DEBUG ifcfg: content of files (kickstart pre section applied for devices ['ens3']):
+15:51:26,913 DEBUG ifcfg: /etc/sysconfig/network-scripts/ifcfg-ens3:
+15:51:26,915 DEBUG ifcfg:   TYPE=Ethernet
+15:51:26,916 DEBUG ifcfg:   PROXY_METHOD=none
+15:51:26,916 DEBUG ifcfg:   BROWSER_ONLY=no
+15:51:26,916 DEBUG ifcfg:   BOOTPROTO=dhcp
+15:51:26,916 DEBUG ifcfg:   DEFROUTE=yes
+15:51:26,916 DEBUG ifcfg:   IPV4_FAILURE_FATAL=no
+15:51:26,916 DEBUG ifcfg:   IPV6INIT=yes
+15:51:26,918 DEBUG ifcfg:   IPV6_AUTOCONF=yes
+15:51:26,919 DEBUG ifcfg:   IPV6_DEFROUTE=yes
+15:51:26,919 DEBUG ifcfg:   IPV6_FAILURE_FATAL=no
+15:51:26,919 DEBUG ifcfg:   IPV6_ADDR_GEN_MODE=stable-privacy
+15:51:26,919 DEBUG ifcfg:   NAME=ens3
+15:51:26,919 DEBUG ifcfg:   UUID=a3f066e6-2864-4369-a046-03ed19ffc6ab
+15:51:26,919 DEBUG ifcfg:   DEVICE=ens3
+15:51:26,919 DEBUG ifcfg:   ONBOOT=no
+15:51:26,949 DEBUG ifcfg: all settings: [{'802-3-ethernet': {'auto-negotiate': False, 'mac-address-blacklist': [], 's390-options': {}}, 'connection': {'autoconnect': False, 'interface-name': 'ens3', 'uuid': 'a3f066e6-2864-4369-a046-03ed19ffc6ab', 'type': '802-3-ethernet', 'id': 'ens3', 'permissions': []}, 'proxy': {}, 'ipv4': {'addresses': [], 'dns-search': [], 'route-data': [], 'dns': [], 'routes': [], 'address-data': [], 'method': 'auto'}, 'ipv6': {'addresses': [], 'dns-search': [], 'route-data': [], 'dns': [], 'routes': [], 'address-data': [], 'method': 'auto'}}]
+15:51:27,107 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,109 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,110 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,111 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,112 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,180 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,181 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,182 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,183 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,184 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,185 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:27,185 DEBUG ifcfg: IfcfgFile.set /etc/sysconfig/network-scripts/ifcfg-ens3: (('ONBOOT', 'yes'),)
+15:51:27,186 DEBUG ifcfg: IfcfgFile.write /etc/sysconfig/network-scripts/ifcfg-ens3:
+TYPE="Ethernet"
+PROXY_METHOD="none"
+BROWSER_ONLY="no"
+BOOTPROTO="dhcp"
+DEFROUTE="yes"
+IPV4_FAILURE_FATAL="no"
+IPV6INIT="yes"
+IPV6_AUTOCONF="yes"
+IPV6_DEFROUTE="yes"
+IPV6_FAILURE_FATAL="no"
+IPV6_ADDR_GEN_MODE="stable-privacy"
+NAME="ens3"
+UUID="a3f066e6-2864-4369-a046-03ed19ffc6ab"
+DEVICE="ens3"
+ONBOOT="yes"
+
+15:51:27,188 DEBUG ifcfg: content of files (real kickstart ONBOOT value set for devices ['ens3']):
+15:51:27,188 DEBUG ifcfg: /etc/sysconfig/network-scripts/ifcfg-ens3:
+15:51:27,189 DEBUG ifcfg:   TYPE="Ethernet"
+15:51:27,189 DEBUG ifcfg:   PROXY_METHOD="none"
+15:51:27,189 DEBUG ifcfg:   BROWSER_ONLY="no"
+15:51:27,190 DEBUG ifcfg:   BOOTPROTO="dhcp"
+15:51:27,190 DEBUG ifcfg:   DEFROUTE="yes"
+15:51:27,190 DEBUG ifcfg:   IPV4_FAILURE_FATAL="no"
+15:51:27,191 DEBUG ifcfg:   IPV6INIT="yes"
+15:51:27,191 DEBUG ifcfg:   IPV6_AUTOCONF="yes"
+15:51:27,191 DEBUG ifcfg:   IPV6_DEFROUTE="yes"
+15:51:27,192 DEBUG ifcfg:   IPV6_FAILURE_FATAL="no"
+15:51:27,192 DEBUG ifcfg:   IPV6_ADDR_GEN_MODE="stable-privacy"
+15:51:27,193 DEBUG ifcfg:   NAME="ens3"
+15:51:27,193 DEBUG ifcfg:   UUID="a3f066e6-2864-4369-a046-03ed19ffc6ab"
+15:51:27,193 DEBUG ifcfg:   DEVICE="ens3"
+15:51:27,194 DEBUG ifcfg:   ONBOOT="yes"
+15:51:27,201 DEBUG ifcfg: all settings: [{'802-3-ethernet': {'auto-negotiate': False, 'mac-address-blacklist': [], 's390-options': {}}, 'connection': {'autoconnect': False, 'interface-name': 'ens3', 'uuid': 'a3f066e6-2864-4369-a046-03ed19ffc6ab', 'type': '802-3-ethernet', 'id': 'ens3', 'permissions': []}, 'proxy': {}, 'ipv4': {'addresses': [], 'dns-search': [], 'route-data': [], 'dns': [], 'routes': [], 'address-data': [], 'method': 'auto'}, 'ipv6': {'addresses': [], 'dns-search': [], 'route-data': [], 'dns': [], 'routes': [], 'address-data': [], 'method': 'auto'}}]
+15:51:28,162 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:28,164 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:28,166 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:28,167 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
+15:51:28,169 DEBUG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-ens3
