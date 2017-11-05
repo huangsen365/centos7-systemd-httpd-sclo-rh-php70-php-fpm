@@ -1,5 +1,6 @@
 FROM c7-systemd-httpd-php70-fpm
 RUN useradd sshuser
+RUN usermod -aG apache sshuser
 RUN echo "export HISTSIZE=10000" >> /etc/bashrc
 RUN echo "export HISTTIMEFORMAT=\"%F %T \"" >> /etc/bashrc
 COPY mkdir.sh /tmp/mkdir.sh
