@@ -1,0 +1,1 @@
+docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro --restart always --name my_centos7 c7-systemd
