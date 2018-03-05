@@ -6,5 +6,4 @@ RUN yum -y install sclo-php71*
 
 RUN yum clean all
 
-EXPOSE 80 443
 CMD ["/usr/sbin/init"]
