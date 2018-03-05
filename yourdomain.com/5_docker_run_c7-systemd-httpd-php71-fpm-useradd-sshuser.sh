@@ -16,4 +16,4 @@ docker run -d \
   -p 443:443 \
   --restart always \
   --name c7-systemd-httpd-php71-fpm-useradd-sshuser_yourdomain.com \
-  c7-systemd-httpd-php71-fpm-useradd-sshuser
+  c7-systemd-httpd-php7x-fpm-useradd-sshuser
