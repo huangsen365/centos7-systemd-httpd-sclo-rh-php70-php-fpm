@@ -17,5 +17,5 @@ COPY mkdir_chown_chmod.sh /root/mkdir_chown_chmod.sh
 RUN sh /tmp/mkdir.sh
 RUN sh /tmp/rsync.sh
 RUN systemctl enable httpd.service; systemctl enable rh-php71-php-fpm
-EXPOSE 80 443
+#EXPOSE 80 443
 CMD ["/usr/sbin/init"]
