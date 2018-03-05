@@ -1,4 +1,4 @@
-FROM c7-systemd-httpd-php7x-fpm
+FROM c7-systemd-httpd-nginx-php7x-fpm
 RUN useradd sshuser
 RUN usermod -aG apache sshuser
 RUN mv /etc/opt/rh/rh-php71/php-fpm.d/www.conf /etc/opt/rh/rh-php71/php-fpm.d/www.conf.bak
@@ -16,5 +16,6 @@ COPY mkdir_chown_chmod.sh /root/mkdir_chown_chmod.sh
 #RUN sed -i -e 's/User\ apache/User\ sshuser/g' -e 's/Group\ apache/Group\ sshuser/g' /etc/httpd/conf/httpd.conf
 RUN sh /tmp/mkdir.sh
 RUN sh /tmp/rsync.sh
+RUN systemctl enable httpd.service; systemctl enable rh-php71-php-fpm
 EXPOSE 80 443
 CMD ["/usr/sbin/init"]
