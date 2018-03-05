@@ -16,6 +16,6 @@ COPY mkdir_chown_chmod.sh /root/mkdir_chown_chmod.sh
 #RUN sed -i -e 's/User\ apache/User\ sshuser/g' -e 's/Group\ apache/Group\ sshuser/g' /etc/httpd/conf/httpd.conf
 RUN sh /tmp/mkdir.sh
 RUN sh /tmp/rsync.sh
-RUN systemctl enable httpd.service; systemctl enable rh-php71-php-fpm
-#EXPOSE 80 443
+RUN systemctl enable httpd.service; systemctl enable rh-php71-php-fpm; systemctl disable sshd;
+EXPOSE 80 443
 CMD ["/usr/sbin/init"]
