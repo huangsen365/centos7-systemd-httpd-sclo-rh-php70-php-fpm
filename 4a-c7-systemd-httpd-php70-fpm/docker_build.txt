@@ -1,2 +1,2 @@
-docker build -t c7-systemd-httpd-php70-fpm .
+docker build -t c7-systemd-httpd-php7x-fpm .
 
