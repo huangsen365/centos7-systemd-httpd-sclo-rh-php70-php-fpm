@@ -2,9 +2,9 @@ FROM c7-systemd-httpd-nginx-php7x-fpm
 RUN useradd sshuser
 RUN usermod -aG apache sshuser
 RUN mv /etc/opt/rh/rh-php71/php-fpm.d/www.conf /etc/opt/rh/rh-php71/php-fpm.d/www.conf.bak
-COPY www.yourdomain.com-php-fpm.conf /etc/opt/rh/rh-php71/php-fpm.d/www.yourdomain.com.conf
+COPY www.yourdomain.com-php-fpm.conf /etc/opt/rh/rh-php71/php-fpm.d/0_www.yourdomain.com.conf
 COPY www.yourdomain.com-php-fpm.conf /etc/opt/rh/rh-php71/php-fpm.d/www.yourdomain.com.conf.bak
-COPY www.yourdomain.com-httpd.conf /etc/httpd/conf.d/www.yourdomain.com.conf
+COPY www.yourdomain.com-httpd.conf /etc/httpd/conf.d/0_www.yourdomain.com.conf
 COPY www.yourdomain.com-httpd.conf /etc/httpd/conf.d/www.yourdomain.com.conf.bak
 
 RUN echo "export HISTSIZE=10000" >> /etc/bashrc
