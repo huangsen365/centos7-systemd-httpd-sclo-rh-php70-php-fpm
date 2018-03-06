@@ -14,6 +14,7 @@ docker run -d \
   -v $current_dir/volumes/volume_yourdomain.com/var/opt:/var/opt \
   -p 80:80 \
   -p 443:443 \
+  -p 2222:22 \
   --restart always \
   --name c7-systemd-httpd-php71-fpm-useradd-sshuser_yourdomain.com \
   c7-systemd-httpd-php7x-fpm-useradd-sshuser
