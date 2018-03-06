@@ -1,1 +1,3 @@
+# before adding this line into /etc/fstab, please install nfs-utils
+
 2f1d94b581-bpm54.cn-shenzhen.nas.aliyuncs.com:/ /root/data1     nfs4    _netdev,auto    0       0
