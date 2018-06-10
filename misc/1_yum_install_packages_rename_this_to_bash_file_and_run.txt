@@ -22,7 +22,7 @@ vim-enhanced \
 wget \
 yum-utils
 
-yum remove -y docker \
+sudo yum remove -y docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
@@ -36,12 +36,13 @@ yum remove -y docker \
 sudo yum install -y yum-utils \
   device-mapper-persistent-data \
   lvm2
-# yum install -y yum-utils device-mapper-persistent-data lvm2
+# sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 
 sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
-yum makecache fast
+
+sudo yum makecache fast
 sudo yum install -y docker-ce
 
 systemctl enable docker
