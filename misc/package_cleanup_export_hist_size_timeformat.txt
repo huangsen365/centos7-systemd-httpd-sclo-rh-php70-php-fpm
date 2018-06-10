@@ -1,3 +1,6 @@
 package-cleanup --oldkernels --count=1 -y
+
+cat /etc/bashrc
+
 echo "export HISTSIZE=10000" >> /etc/bashrc
 echo "export HISTTIMEFORMAT=\"%F %T \"" >> /etc/bashrc
